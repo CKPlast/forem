@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOREM ENERJİ</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f5f9; /* Modern, temiz ve ferah açık gri arka plan */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #ffffff; /* Tam beyaz kart arka planı */
+            padding: 35px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(14, 165, 233, 0.08); /* Enerji mavisi tonlarında hafif gölge */
+            text-align: center;
+            max-width: 360px;
+            width: 90%;
+            margin: 20px auto;
+            /* Açılış Animasyonu */
+            animation: fadeIn 0.8s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .logo-img {
+            width: 190px;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #0f172a; /* Modern Koyu Slate */
+            font-size: 24px; 
+            margin-bottom: 6px;
+            font-weight: 800; 
+            letter-spacing: 0.5px;
+            text-transform: uppercase; 
+        }
+        .subtitle {
+            color: #0284c7; /* Yenilenebilir Enerji / Teknoloji Mavisi */
+            font-size: 13px;
+            margin-bottom: 25px; 
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .section-title {
+            font-size: 12px;
+            color: #94a3b8; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 25px 0 12px;
+            text-align: left;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 5px;
+            font-weight: 700;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-decoration: none;
+            padding: 14px;
+            margin: 12px 0;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(2, 132, 199, 0.15);
+        }
+        .btn:active { transform: scale(0.98); }
+        
+        /* Kurumsal Renk Paleti */
+        .btn-call { background-color: #0284c7; color: #ffffff; border: 2px solid #0284c7; } /* Enerji Mavisi */
+        .btn-mail { background-color: #475569; color: #ffffff; border: 2px solid #475569; } /* Slate Gri */
+        .btn-maps { background-color: #ffffff; color: #0284c7; border: 2px solid #0284c7; } /* Çerçeveli Beyaz */
+        .btn-web { background-color: #0f172a; color: #ffffff; border: 2px solid #0f172a; }  /* Güçlü Koyu Antrasit */
+        .btn-insta { background-color: #e1306c; color: #ffffff; border: 2px solid #e1306c; } /* Instagram Kurumsal */
+        .btn-face { background-color: #1877f2; color: #ffffff; border: 2px solid #1877f2; }  /* Facebook Kurumsal */
+        
+        /* Hover Efektleri */
+        .btn-call:hover { background-color: #0369a1; border-color: #0369a1; }
+        .btn-mail:hover { background-color: #334155; border-color: #334155; }
+        .btn-maps:hover { background-color: #f0f9ff; }
+        .btn-web:hover { background-color: #1e293b; border-color: #1e293b; }
+        .btn-insta:hover { background-color: #b81d50; border-color: #b81d50; }
+        .btn-face:hover { background-color: #145dbf; border-color: #145dbf; }
+        
+        /* Profesyonel Footer Alanı */
+        .footer-wrapper {
+            margin-top: 30px;
+            border-top: 1px dashed #e2e8f0; 
+            padding-top: 15px;
+        }
+        .legal-footer {
+            font-size: 11px;
+            color: #94a3b8;
+            font-weight: 500;
+            margin-bottom: 3px;
+        }
+        .creator-tag {
+            font-size: 10px; 
+            color: #cbd5e1; 
+            text-decoration: none; 
+            transition: color 0.2s ease; 
+            display: inline-block;
+            font-weight: 400;
+        }
+        .creator-tag span {
+            font-weight: 700; 
+            color: #94a3b8; 
+        }
+        .creator-tag:hover, .creator-tag:hover span {
+            color: #0284c7; /* Üzerine gelince enerji mavisine dönüşür */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="logo.png" alt="FOREM ENERJİ LOGO" class="logo-img">
+    
+    <h1>FOREM ENERJİ</h1>
+    <div class="subtitle">Mühendislik & Yenilenebilir Enerji</div>
+    
+    <div class="section-title">📍 İletişim & Ulaşım</div>
+    
+    <a href="tel:+903422660000" class="btn btn-call">📞 İletişim Merkezini Ara</a>
+    
+    <a href="mailto:info@forem.com.tr" class="btn btn-mail">✉️ E-posta Gönder</a>
+    
+    <a href="https://www.google.com/maps?cid=6377100120677283927&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF&hl=tr&gl=TR&source=embed" target="_blank" class="btn btn-maps">🗺️ Yol Tarifi / Konum</a>
+    
+    <div class="section-title">🌐 Dijital Kanallarımız</div>
+    
+    <a href="https://forem.com.tr//" target="_blank" class="btn btn-web">Web Sitemiz</a>
+    
+    <a href="https://www.instagram.com/forem.enerji" target="_blank" class="btn btn-insta">📸 Instagram Profili</a>
+    
+    <a href="https://www.facebook.com/foremenerji27" target="_blank" class="btn btn-face">🔵 Facebook Sayfası</a>
+    
+    <div class="footer-wrapper">
+        <div class="legal-footer">© 2026 Forem Enerji</div>
+        <a href="#" target="_blank" class="creator-tag">Dijital Kart Tasarımı: <span>CK Plast</span></a>
+    </div>
+</div>
+
+</body>
+</html>
